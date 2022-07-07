@@ -4,20 +4,20 @@
 int main () {
 	int numero, i;
 
-
-	printf("-----------------------\n");
-	printf("Digite um numero: ", numero);
+	printf("---------------------------------\n");
+	printf(" Bem-Vindo ao jogo da Matematica \n");
+	printf("---------------------------------\n");
+	printf("\n");
+	printf("------- Digite um Numero! -------\n");
 	scanf("%d", &numero);
-	printf("-----------------------\n");
+	printf("\n");
 
-	printf("\n--------------------------\n");
-	printf("O numero antecessor e: %d\n", numero -1);
-	printf("O numero sucessor e: %d\n", numero +1);
-	printf("----------------------------\n");
-
-	printf("\n------------------------------\n");
+	printf("----- Tabuada do Numero: %d ------\n", numero);
 	for (i = 1; i < 11; i++) {
-		printf("A tabuada de %d x %d e: %d\n", numero, i,i * numero);
+		printf("           %d x %d e: %d\n", numero, i,i * numero);
 	}
-	printf("------------------------------\n");
+	printf("\n");
+	
+	printf("---- O Antecessor de: %d eh: %d ----\n", numero-1 );
+	printf("----- O Sucessor de: %d eh: %d -----\n", numero+1 );
 }
